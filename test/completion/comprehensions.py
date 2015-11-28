@@ -60,6 +60,18 @@ listen(['' for x in [1]])
 #? str
 ([str for x in []])[0]
 
+# issue 592 - taken from the thread, @patrys
+generated = [i for i in [1, 2]]
+
+r = generated[0]
+#? ['imag']
+r.imag
+
+r = generated.pop()
+#? ['imag']
+r.imag
+
+
 
 # -----------------
 # nested list comprehensions
