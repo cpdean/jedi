@@ -176,6 +176,19 @@ def a():
     """
     pass
 
+
+def issue_610_fn1():
+    global global_dict_var_i_610
+    global_dict_var_i_610 = dict()
+
+
+def issue_610_fn2():
+    global global_dict_var_i_610
+    issue_610_fn1()
+    #? ["update"]
+    global_dict_var_i_610.upda
+
+
 #?
 # str literals in comment """ upper
 
