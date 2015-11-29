@@ -29,6 +29,17 @@ result[0]
 #? int()
 result[1]
 
+"""
+doing test in a literal because
+each one is a syntax error
+
+#? ['lambda']
+m = lambda
+
+#? ['lambda']
+map(lambda
+"""
+
 def with_lambda(callable_lambda, *args, **kwargs):
     return callable_lambda(1, *args, **kwargs)
 
